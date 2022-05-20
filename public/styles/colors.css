@@ -1,0 +1,52 @@
+:root {
+    --body_background: #F9F9F9;
+    --header_background: #D7D4FF;
+    --title_foreground: #2B2B2B;
+    --button_background: #6C63FF;
+    --button_foreground: #FFF;
+    --subtitle_color: #555;
+    --card_background: #FFF;
+    --form_background: #D7D4FF;
+    --placeholder_foreground: #6E7275;
+}
+
+body {
+    background: var(--body_background);
+}
+
+header {
+    background: var(--header_background);
+}
+
+h1, h2, h3{
+    color: var(--title_foreground);
+}
+
+.subtitle {
+    color: var(--subtitle_color);
+}
+
+input[type='button'] {
+    background: var(--button_background);
+    color: var(--button_foreground);
+}
+
+.card {
+    background: var(--card_background);
+    box-shadow: 0px 0px 20px #0000001a;
+}
+
+.card:nth-of-type(1) .color {  background: #FF6363;  }
+.card:nth-of-type(2) .color {  background: #63ECFF;  }
+.card:nth-of-type(3) .color {  background: #F363FF;  }
+.card:nth-of-type(4) .color {  background: #63FF73;  }
+.card:nth-of-type(5) .color {  background: #FFDD63;  }
+.card:nth-of-type(6) .color {  background: #6663FF;  }
+
+form {
+    background: var(--form_background);
+}
+
+form :is(input, textarea)::placeholder {
+    color: var(--placeholder_foreground);
+}
